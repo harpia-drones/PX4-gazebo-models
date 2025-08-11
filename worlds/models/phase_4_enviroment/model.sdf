@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version='1.10'>
+  <model name='wall'>
+    <pose>0 0 0 0 0 0</pose>
+
+    <include>
+      <name>wall_1</name>
+      <uri>models/phase_4_enviroment/walls/wall_6</uri>
+      <pose>0 -1 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <name>wall_2</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>-3 -0.5 0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>wall_3</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>-1 -0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_4</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>1 -0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_5</name>
+      <uri>models/phase_4_enviroment/walls/wall_2</uri>
+      <pose>3 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_6</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>-2 0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_7</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>0 0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_8</name>
+      <uri>models/phase_4_enviroment/walls/wall_1</uri>
+      <pose>2 0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>wall_9</name>
+      <uri>models/phase_4_enviroment/walls/wall_5</uri>
+      <pose>-0.5 1 0 0 0  1.5708</pose>
+    </include>
+
+    <include>
+      <name>window_1</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>-3 0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>window_2</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>-2.5 0 0 0 0 1.5708</pose>
+    </include> 
+
+    <include>
+      <name>window_3</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>-0.5 0 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <name>window_4</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>0 -0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>window_5</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>0.5 0 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <name>window_6</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>1 0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>window_7</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>2 -0.5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <name>window_8</name>
+      <uri>models/phase_4_enviroment/window</uri>
+      <pose>2.5 1 0 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <name>ceiling</name>
+      <uri>models/phase_4_enviroment/ceiling</uri>
+      <pose>0 0 0.75 0 0 0</pose>
+    </include>
+
+
+    <static>true</static>
+    <self_collide>false</self_collide>
+  </model>
+</sdf>
