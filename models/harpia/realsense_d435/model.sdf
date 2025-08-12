@@ -17,14 +17,14 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://realsense_d435/meshes/realsense.dae</uri>
+            <uri>model://harpia/realsense_d435/meshes/realsense.dae</uri>
           </mesh>
         </geometry>
       </collision>
       <visual name= "visual">
         <geometry>
           <mesh>
-            <uri>model://realsense_d435/meshes/realsense.dae</uri>
+            <uri>model://harpia/realsense_d435/meshes/realsense.dae</uri>
             <submesh>
               <name>RealSense</name>
               <center>false</center>
@@ -36,18 +36,12 @@
           <specular>1.0 1.0 1.0</specular>
           <pbr>
             <metal>
-              <albedo_map>model://realsense_d435/materials/textures/RealSense_Albedo.png</albedo_map>
-              <normal_map>model://realsense_d435/materials/textures/RealSense_Normal.png</normal_map>
-              <metalness_map>model://realsense_d435/materials/textures/RealSense_Metalness.png</metalness_map>
-              <roughness_map>model://realsense_d435/materials/textures/RealSense_Roughness.png</roughness_map>
+              <albedo_map>model://harpia/realsense_d435/textures/RealSense_Albedo.png</albedo_map>
+              <normal_map>model://harpia/realsense_d435/textures/RealSense_Normal.png</normal_map>
+              <metalness_map>model://harpia/realsense_d435/textures/RealSense_Metalness.png</metalness_map>
+              <roughness_map>model://harpia/realsense_d435/textures/RealSense_Roughness.png</roughness_map>
             </metal>
           </pbr>
-          <!-- fallback to script if no PBR support-->
-          <script>
-            <uri>model://realsense_d435/materials/scripts/</uri>
-            <uri>model://realsense_d435/materials/textures/</uri>
-            <name>UrbanTile/RealSense_Diffuse</name>
-          </script>
         </material>
       </visual>
 
@@ -73,7 +67,7 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>1</visualize>
-        <topic>color_cam_foward</topic>
+        <topic>color_cam_downward</topic>
       </sensor>
       <sensor name="ired1" type="camera">
         <pose frame="">0 -0.06 0.004 0 0 -1.5707</pose>
@@ -97,7 +91,7 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>0</visualize>
-        <topic>ired1_cam_foward</topic>
+        <topic>ired1_cam_downward</topic>
       </sensor>
       <sensor name="ired2" type="camera">
         <pose frame="">0 0.01 0.004 0 0 -1.5707</pose>
@@ -121,7 +115,7 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>0</visualize>
-        <topic>ired2_cam_foward</topic>
+        <topic>ired2_cam_downward</topic>
       </sensor>
       <sensor name="depth" type="depth">
         <pose frame="">0 -0.03 0.004 0 0 -1.5707</pose>
@@ -145,7 +139,7 @@
         <always_on>1</always_on>
         <update_rate>10</update_rate>
         <visualize>0</visualize>
-        <topic>depth_cam_foward</topic>
+        <topic>depth_cam_downward</topic>
       </sensor>
       
       <!-- IMU  -->
@@ -153,7 +147,7 @@
 				<always_on>1</always_on>
 				<update_rate>50</update_rate>
 				<visualize>0</visualize>
-				<topic>imu_front</topic>
+				<topic>imu_downward</topic>
 				
 				<imu>
 					<enable_orientation>0</enable_orientation>
