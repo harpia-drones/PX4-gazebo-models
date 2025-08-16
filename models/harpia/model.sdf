@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdf version='1.9'>
-  <model name='x500_mono_cam'>
-  
+  <model name='harpia'>
+
   	<!--Frame base-->
     <include merge='true'>
       <uri>x500</uri>
       <pose>1.0 0.75 0.5 0 0 1.5707</pose>
     </include>
-    
+
     <!--sensor LIDAR-->
     <include merge='true'>
       <uri>model://LW20</uri>
       <pose relative_to="base_link">0 0 -0.079 0 1.5707 0</pose>
     </include>
-    
+
     <!--Camera-->
     <include merge='true'>
       <uri>model://harpia/realsense_d435</uri>
-      <pose>1.0 0.80 0.695 1.5707 0 0</pose> 
+      <pose>1.0 0.80 0.695 1.5707 0 0</pose>
     </include>
-    
+
     <joint name="CameraJoint" type="fixed">
       <parent>base_link</parent>
       <child>link</child>
       <pose relative_to="base_link">0 0 0 0 0 0</pose>
     </joint>
-    
+
     <joint name="lidar_model_joint" type="fixed">
       <parent>base_link</parent>
       <child>lw20_link</child>
       <pose relative_to="base_link">-0 0 0 0 0 0</pose>
     </joint>
-    
+
     <joint name="lidar_sensor_joint" type="fixed">
       <parent>base_link</parent>
       <child>lidar_sensor_link</child>
     </joint>
-    
+
     <link name="lidar_sensor_link">
       <pose relative_to="base_link">0 0 -0.05 0 1.57  0</pose>
       <inertial>
