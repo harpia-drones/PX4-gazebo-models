@@ -36,7 +36,7 @@
     <!--Parede leste -->
     <model name="wall_east">
 			<include>
-        <uri>models/wall</uri>
+        <uri>models/wall_logo</uri>
       </include>
       <pose>8.05 4.05 2.5 0 0 3.141598653589793</pose>  <!-- rotacionado por 180 graus em radianos-->
 		</model>
@@ -44,7 +44,7 @@
     <!--Parede Sul-->
     <model name="wall_south">
 			<include>
-        <uri>models/wall</uri>
+        <uri>models/wall_logo</uri>
       </include>
       <pose>4.05 -0.05 2.5 0 0 -1.5707963267948965</pose>  <!-- rotacionado por -90 graus em radianos-->
 		</model>
@@ -56,7 +56,7 @@
       </include>
       <pose>1 0.75 0.25 0 0 0</pose>
 		</model>
-
+    
     <!--5 bases-->
     <model name="moving1">
 			<include>
@@ -94,8 +94,7 @@
       </include>
       <pose>3.5 1.25 1.55 0 0 0</pose>
 		</model>
-
-
+    
     <!-- Fase 4-->
       <model name="phase_4_enviroment">
         <include>
