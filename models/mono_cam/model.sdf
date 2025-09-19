@@ -64,6 +64,17 @@
         <always_on>1</always_on>
         <update_rate>30</update_rate>
         <visualize>true</visualize>
+        
+        
+        <plugin filename="libgz-sim-ros2-camera-system.so"
+                name="gz::sim::systems::ROS2Camera">
+            <ros>
+                <namespace>camera/down</namespace>
+            </ros>
+            <camera_info_topic>camera_info</camera_info_topic>
+            <image_topic>image_raw</image_topic>
+            
+        </plugin>
       </sensor>
       <gravity>true</gravity>
       <velocity_decay />
