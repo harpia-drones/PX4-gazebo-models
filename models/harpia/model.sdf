@@ -17,7 +17,12 @@
     <!--Camera-->
     <include merge='true'>
       <uri>model://harpia/realsense_d435</uri>
-      <pose>1.0 0.80 0.695 1.5707 0 0</pose>
+      <pose>1.0 0.80 0.695 0 0 0</pose>
+    </include>
+
+    <include merge='true'>
+      <uri>model://mono_cam</uri>
+      <pose>0 0 .10 0 1.5707 0</pose>
     </include>
 
     <joint name="CameraJoint" type="fixed">
